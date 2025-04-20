@@ -1,2 +1,0 @@
-# rectvy-nlendrimaana
-efdsadsadad
