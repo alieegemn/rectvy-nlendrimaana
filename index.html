@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yönlendirme Sayfası</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 30px;
+      animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    #loading {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    #subtitle {
+      font-size: 1.2em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://rectvwebv3.pages.dev/assets/rectv.png" alt="RecTV Logo">
+  <div id="loading">Yükleniyor...</div>
+  <div id="subtitle">RecTV Yedek</div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = 'https://rectvwebv3.pages.dev';
+    }, 10000);
+  </script>
+</body>
+</html>
